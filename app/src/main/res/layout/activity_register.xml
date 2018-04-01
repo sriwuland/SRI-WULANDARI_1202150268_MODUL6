@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    android:id="@+id/rootlogin"
+    tools:context="com.example.asus.sri_wulandari_1202150268_modul6.RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:textSize="33dp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Register Now"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
